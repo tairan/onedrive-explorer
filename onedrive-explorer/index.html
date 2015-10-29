@@ -3,10 +3,15 @@
 <head>
   <title>onedrive explorer</title>
   <link rel="stylesheet" type="text/css" href="style.css"/>
-  <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+  <script>
+  var $ = require("./jquery-1.11.1.min.js");
+  var odauth = require("./odauth.js");
+  </script>
+<!--
   <script id="odauth" src="odauth.js"
    clientId="0000000048144E4F" scopes="onedrive.readonly wl.signin"
-   redirectUri="https://onedrive.github.io/odx/callback.html"></script>
+	  redirectUri="https://onedrive.github.io/odx/callback.html"></script>
+  -->
 </head>
 <body>
   <div id="od-loading"></div>
